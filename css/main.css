@@ -36,6 +36,7 @@ article header p {
 
 article > p:last-child {
   border-bottom: 1px solid #999;
+  padding-bottom: 1rem;
 }
 
 blockquote {
@@ -46,4 +47,48 @@ blockquote {
 
 .quote {
   color: #999;
+}
+
+@media only screen and (min-width: 25em) {
+
+  blockquote {
+  margin: 0;
+  padding: 0;
+
+  }
+
+  ol {
+padding-left: .6em;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  blockquote {
+  margin-left: 2em;
+  padding: 0;
+
+  }
+
+  article > p:last-child {
+    padding-bottom: 2rem;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+article {
+  margin-left: 8em;
+  }
+
+  p {
+    margin-left: .5em;
+  }
+
+  blockquote {
+  margin: 1em 4em 1.5em;
+  }
+
 }
